@@ -55,6 +55,31 @@ buttonSend.addEventListener("click",
 );
 
 
+const buttoncancel = document.querySelector("#cancel");
+buttoncancel.addEventListener("click",
+
+    function() {
+        const kiloMetri = document.getElementById("kilo_Metri");
+        kiloMetri.value = "";
+        const fullNameSurName = document.getElementById("fullname");
+        fullNameSurName.value = "";
+        
+        const eta = document.getElementById("age");
+        eta.value = "minorenne";
+        
+    }
+);
+
+
+
+
+
+
+
+
+
+
+
 
 
 // let baseTicketCost = kmMostrati * 0.21;
