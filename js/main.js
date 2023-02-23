@@ -5,20 +5,21 @@
 
 
 
-const buttonSend = document.querySelector("#send")
+const buttonSend = document.querySelector("#send");
 
 
 buttonSend.addEventListener("click",
+
     function(){
-        const eta = document.querySelector("#age");
+        const eta = document.getElementById("age");
         const etaMostrata = eta.value;
-        console.log(eta);
+        alert(etaMostrata);
         const kiloMetri = document.querySelector("#kilo_Metri");
         const kmMostrati = kiloMetri.value;
-        console.log(kiloMetri);
+        console.log(kmMostrati);
         const fullNameSurName = document.querySelector("#fullname");
         const nameMostrato = fullNameSurName.value;
-        console.log(fullNameSurName);
+        console.log(nameMostrato);
     }
 
 
