@@ -22,22 +22,25 @@ buttonSend.addEventListener("click",
        
 
         let newTicketcost;
-
+        let tipoOfferta;
 
         if (etaMostrata == "minorenne"){
-            newTicketcost = baseTicketCost - (baseTicketCost * 20 / 100);   
+            newTicketcost = baseTicketCost - (baseTicketCost * 20 / 100);
+            tipoOfferta = "Biglietto scontato silver";   
         }else if (etaMostrata == "over"){
-            newTicketcost = baseTicketCost - (baseTicketCost * 40 / 100);   
+            newTicketcost = baseTicketCost - (baseTicketCost * 40 / 100);
+            tipoOfferta = "Biglietto scontato gold";    
         }
         else{
             newTicketcost = baseTicketCost;
+            tipoOfferta = "Biglietto standard";
         }
 
         newTicketcost = newTicketcost.toFixed(2);
 
         
 
-        
+        document.getElementById("type_of_ticket").innerHTML = tipoOfferta;
         document.getElementById("cost_ticket").innerHTML = newTicketcost ;
         document.getElementById("name_passenger").innerHTML = nameMostrato ;
 

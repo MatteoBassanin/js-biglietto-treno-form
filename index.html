@@ -10,20 +10,22 @@
 <body>
     
     <h1>Calcola il prezzo del tuo biglietto</h1>
+    <div>
+        <form class="d_flex space_beetween">
+            <label for="fullname">Nome completo:</label>
+            <input type="text" id="fullname">
+            <!-- <label for="age">fascia d'età:</label>
+            <input type="text" id="age"> -->
+            <label for="kilo_Metri">kilometri:</label>
+            <input type="text" id="kilo_Metri">
+            <select id="age">
+                <option value="minorenne">Minorenne</option>
+                <option value="maggiorenne">Maggiorenne</option>
+                <option value="over">Over65</option>
+            </select>
+        </form>
 
-    <form>
-        <label for="fullname">Nome completo:</label>
-        <input type="text" id="fullname">
-        <!-- <label for="age">fascia d'età:</label>
-        <input type="text" id="age"> -->
-        <label for="kilo_Metri">kilometri:</label>
-        <input type="text" id="kilo_Metri">
-        <select id="age">
-            <option value="minorenne">Minorenne</option>
-            <option value="maggiorenne">Maggiorenne</option>
-            <option value="over">Over65</option>
-        </select>
-    </form>
+    </div>
 
     <button id="send">Genera</button>
     <button id="cancel">Cancella</button>
@@ -46,7 +48,7 @@
                   <th>Costo biglietto</th>
                 </tr>
                 <tr>
-                  <td></td>
+                  <td id="type_of_ticket"></td>
                   <td id="numero_carrozza"></td>
                   <td id="codice_cp"></td>
                   <td id="cost_ticket"></td>

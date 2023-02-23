@@ -32,3 +32,11 @@ body{
 .text_center{
     text-align: center;
 }
+
+th,td{
+    padding: 20px 30px o;
+}
+
+.rouned{
+    border-radius: 20px;
+}
