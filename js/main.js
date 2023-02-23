@@ -48,6 +48,10 @@ buttonSend.addEventListener("click",
         codiceBiglietto= Math.floor(Math.random() * 100001 + 10000);
         document.getElementById("codice_cp").innerHTML = codiceBiglietto ;
 
+        let numeroDellaCarrozza = document.getElementById("numero_carrozza");
+        numeroDellaCarrozza= Math.floor(Math.random() * 10 + 1);
+        document.getElementById("numero_carrozza").innerHTML = numeroDellaCarrozza ;
+
 
     }
 
