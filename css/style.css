@@ -1,7 +1,13 @@
+body{
+    background-color: #B60C4C;
+}
+
 .square{
     border: 1 px solid black;
     height: 300px;
     background-color: aqua;
+    width: 80%;
+    margin: auto;
     
 }
 
@@ -21,4 +27,8 @@
 
 .space_beetween{
     justify-content: space-between;
+}
+
+.text_center{
+    text-align: center;
 }

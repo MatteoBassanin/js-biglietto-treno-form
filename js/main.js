@@ -1,10 +1,3 @@
-// const kiloMetri = parseInt(prompt("Quanti km devi percorrere?"));
-
-// const eta = parseInt(prompt("Quanti anni hai ?"));
-
-
-
-
 const buttonSend = document.querySelector("#send");
 
 
@@ -13,9 +6,7 @@ const buttonSend = document.querySelector("#send");
 buttonSend.addEventListener("click",
 
     function(){
-        // const eta = document.getElementById("age");
-        // const etaMostrata = parseInt(eta.value);
-        // console.log(etaMostrata);
+       
         const kiloMetri = document.getElementById("kilo_Metri");
         const kmMostrati = parseInt(kiloMetri.value);
         console.log(kmMostrati);
@@ -28,7 +19,7 @@ buttonSend.addEventListener("click",
 
         let baseTicketCost = kmMostrati * 0.21;
 
-        // alert(baseTicketCost);
+       
 
         let newTicketcost;
 
@@ -46,13 +37,16 @@ buttonSend.addEventListener("click",
 
         
 
-        // alert(newTicketcost);
-        document.getElementById("cost_ticket").innerHTML = "Il costo del tuo biglietto è di " + newTicketcost ;
+        
+        document.getElementById("cost_ticket").innerHTML = newTicketcost ;
         document.getElementById("name_passenger").innerHTML = nameMostrato ;
 
         const result_ticket = document.getElementById("result");
         result_ticket.classList.remove("d_none");
 
+        let codiceBiglietto = document.getElementById("codice_cp");
+        codiceBiglietto= Math.floor(Math.random() * 100001 + 10000);
+        document.getElementById("codice_cp").innerHTML = codiceBiglietto ;
 
 
     }
@@ -87,50 +81,5 @@ buttoncancel.addEventListener("click",
 
 
 
-
-// let baseTicketCost = kmMostrati * 0.21;
-
-// alert(baseTicketCost);
-
-// let newTicketcost;
-
-
-// if (etaMostrata <= 18){
-//     newTicketcost = baseTicketCost - (baseTicketCost * 20 / 100);   
-// }else if (etaMostrata >= 65){
-//     newTicketcost = baseTicketCost - (baseTicketCost * 40 / 100);   
-// }
-// else{
-//     newTicketcost = baseTicketCost;
-// }
-
-// newTicketcost = newTicketcost.toFixed(2);
-
-
-// console.log(newTicketcost);
-
-
-
-
-
-// let baseTicketCost = kiloMetri * 0.21;
-
-// console.log(baseTicketCost);
-
-// let newTicketcost;
-
-
-// if (eta <= 18){
-//     newTicketcost = baseTicketCost - (baseTicketCost * 20 / 100);   
-// }else if (eta >= 65){
-//     newTicketcost = baseTicketCost - (baseTicketCost * 40 / 100);   
-// }
-// else{
-//     newTicketcost = baseTicketCost;
-// }
-
-// newTicketcost = newTicketcost.toFixed(2);
-
-// document.getElementById("cost_ticket").innerHTML = "Il costo del tuo biglietto è di " + newTicketcost ;
 
 
