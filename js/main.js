@@ -13,28 +13,29 @@ const buttonSend = document.querySelector("#send");
 buttonSend.addEventListener("click",
 
     function(){
-        const eta = document.getElementById("age");
-        const etaMostrata = parseInt(eta.value);
-        console.log(etaMostrata);
+        // const eta = document.getElementById("age");
+        // const etaMostrata = parseInt(eta.value);
+        // console.log(etaMostrata);
         const kiloMetri = document.getElementById("kilo_Metri");
         const kmMostrati = parseInt(kiloMetri.value);
         console.log(kmMostrati);
         const fullNameSurName = document.getElementById("fullname");
         const nameMostrato = fullNameSurName.value;
         console.log(nameMostrato);
-        // const eta = document.getElementById("age");
-        // eta.value
+        const eta = document.getElementById("age");
+        const etaMostrata = eta.value;
+        console.log(etaMostrata)
 
         let baseTicketCost = kmMostrati * 0.21;
 
-        alert(baseTicketCost);
+        // alert(baseTicketCost);
 
         let newTicketcost;
 
 
-        if (etaMostrata <= 18){
+        if (etaMostrata == "minorenne"){
             newTicketcost = baseTicketCost - (baseTicketCost * 20 / 100);   
-        }else if (etaMostrata >= 65){
+        }else if (etaMostrata == "over"){
             newTicketcost = baseTicketCost - (baseTicketCost * 40 / 100);   
         }
         else{
@@ -45,7 +46,7 @@ buttonSend.addEventListener("click",
 
         
 
-
+        alert(newTicketcost);
 
 
     }
