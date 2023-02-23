@@ -9,34 +9,45 @@
 </head>
 <body>
     
-    <h1>Calcola il prezzo del tuo biglietto</h1>
-    <div>
-        <form class="d_flex space_beetween">
-            <label for="fullname">Nome completo:</label>
-            <input type="text" id="fullname">
-            <!-- <label for="age">fascia d'età:</label>
-            <input type="text" id="age"> -->
-            <label for="kilo_Metri">kilometri:</label>
-            <input type="text" id="kilo_Metri">
-            <select id="age">
+    <h1 class="text_center white_text">Calcola il prezzo del tuo biglietto</h1>
+
+    <div class="square rounded">
+        <form class="d_flex space_beetween align_center height_100">
+            <div class="oriz_pd">
+                <label for="fullname" class="d_block red_text">Nome completo:</label>
+                <input type="text" id="fullname">
+
+            </div>
+            <div class="oriz_pd">
+                <label for="kilo_Metri" class="d_block red_text">kilometri:</label>
+                <input type="text" id="kilo_Metri" class="red_text">
+
+            </div>
+            <select id="age" class="oriz_pd">
                 <option value="minorenne">Minorenne</option>
                 <option value="maggiorenne">Maggiorenne</option>
                 <option value="over">Over65</option>
             </select>
+        
         </form>
+        
+        <div class="text_center">
+            <button id="send"> Genera</button>
+            <button id="cancel">Cancella</button>
 
+        </div>
+        
     </div>
-
-    <button id="send">Genera</button>
-    <button id="cancel">Cancella</button>
+    
+    
     
 
-    <h1>Il tuo biglietto</h1>
+    <h1 class="text_center white_text">Il tuo biglietto</h1>
 
     <div class="square d_none " id="result">
-        <h2 class="text_center">DETTAGLIO PASSEGGERI</h2>
+        <h3>DETTAGLIO PASSEGGERO</h3>
         <div class="d_flex space_beetween">
-            <div>
+            <div class="bg_grey">
                 <h3>Nome del passeggero</h3>
                 <div id="name_passenger"></div>
             </div>
@@ -54,12 +65,7 @@
                   <td id="cost_ticket"></td>
                 </tr>
               </table>
-            <!-- <div>
-                <div></div>
-            </div>
-            <div id="cost_ticket">
-        </div> -->
-
+       
         </div>
 
     </div>
