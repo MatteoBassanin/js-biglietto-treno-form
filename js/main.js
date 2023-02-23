@@ -50,6 +50,11 @@ buttonSend.addEventListener("click",
         document.getElementById("cost_ticket").innerHTML = "Il costo del tuo biglietto è di " + newTicketcost ;
         document.getElementById("name_passenger").innerHTML = nameMostrato ;
 
+        const result_ticket = document.getElementById("result");
+        result_ticket.classList.remove("d_none");
+
+
+
     }
 
 

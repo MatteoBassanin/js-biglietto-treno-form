@@ -9,7 +9,7 @@
 </head>
 <body>
     
-    <h1>Calcoa il prezo del tuo biglietto</h1>
+    <h1>Calcola il prezzo del tuo biglietto</h1>
 
     <form>
         <label for="fullname">Nome completo:</label>
@@ -29,11 +29,34 @@
     <button id="cancel">Cancella</button>
     
 
-
     <h1>Il tuo biglietto</h1>
-    <div class="square">
-        <div id="name_passenger"></div>
-        <div id="cost_ticket">
+
+    <div class="square d_none " id="result">
+        <h2>DETTAGLIO PASSEGGERI</h2>
+        <div class="d_flex space_beetween">
+            <div>
+                <h3>Nome del passeggero</h3>
+                <div id="name_passenger"></div>
+            </div>
+            <table>
+                <tr>
+                  <th>Company</th>
+                  <th>Contact</th>
+                  <th>Country</th>
+                  <th>Country</th>
+                </tr>
+                <tr>
+                  <td >Alfreds Futterkiste</td>
+                  <td>Maria Anders</td>
+                  <td>Germany</td>
+                  <td id="cost_ticket">Germany</td>
+                </tr>
+              </table>
+            <!-- <div>
+                <div></div>
+            </div>
+            <div id="cost_ticket">
+        </div> -->
 
         </div>
 
