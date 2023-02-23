@@ -46,8 +46,8 @@ buttonSend.addEventListener("click",
 
         
 
-        alert(newTicketcost);
-
+        // alert(newTicketcost);
+        document.getElementById("cost_ticket").innerHTML = "Il costo del tuo biglietto è di " + newTicketcost ;
 
     }
 
